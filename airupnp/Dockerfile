@@ -1,4 +1,4 @@
-FROM ubuntu
+FROM debian:stable-slim
 
 RUN apt update && apt install -y wget openssl tzdata \
     && ln -sf /usr/share/zoneinfo/Asia/Shanghai /etc/localtime \
