@@ -1,4 +1,4 @@
-FROM alpine:3.11
+FROM alpine
 
 ENV FRP_VERSION 0.33.0
 

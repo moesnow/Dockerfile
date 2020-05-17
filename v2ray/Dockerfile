@@ -1,4 +1,4 @@
-FROM alpine:3.11
+FROM alpine
 
 ENV V2RAY_VERSION 4.23.1
 

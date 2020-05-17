@@ -9,7 +9,7 @@ RUN git clone https://github.com/m13253/dns-over-https.git \
 
 FROM alpine as prod
 
-COPY --from=0 /root/dns-over-https/doh-client/doh-server /bin/
-COPY --from=0 /root/dns-over-https/doh-client/doh-server.conf /etc/
+COPY --from=0 /root/dns-over-https/doh-server/doh-server /bin/
+COPY --from=0 /root/dns-over-https/doh-server/doh-server.conf /etc/
 
 CMD ["doh-server", "-conf", "/etc/doh-server.conf"]

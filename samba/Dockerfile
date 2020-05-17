@@ -1,4 +1,4 @@
-FROM alpine:3.11
+FROM alpine
 
 RUN apk add tzdata samba && ln -sf /usr/share/zoneinfo/Asia/Shanghai /etc/localtime \
     && chmod 0777 /home \
