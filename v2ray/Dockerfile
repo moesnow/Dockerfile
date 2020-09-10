@@ -1,6 +1,6 @@
 FROM alpine
 
-ENV V2RAY_VERSION 4.23.1
+ENV V2RAY_VERSION 4.27.5
 
 RUN apk add tzdata && ln -sf /usr/share/zoneinfo/Asia/Shanghai /etc/localtime \
     && cd /root && wget https://github.com/v2ray/v2ray-core/releases/download/v${V2RAY_VERSION}/v2ray-linux-64.zip \
