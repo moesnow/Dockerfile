@@ -1,6 +1,6 @@
 FROM alpine
 
-ENV FRP_VERSION 0.33.0
+ENV FRP_VERSION 0.36.2
 
 RUN apk add tzdata && ln -sf /usr/share/zoneinfo/Asia/Shanghai /etc/localtime \
     && cd /root && wget https://github.com/fatedier/frp/releases/download/v${FRP_VERSION}/frp_${FRP_VERSION}_linux_amd64.tar.gz \

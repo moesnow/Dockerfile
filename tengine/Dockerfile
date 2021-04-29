@@ -1,6 +1,6 @@
 FROM alpine
 
-ENV TENGINE_VERSION 2.3.2
+ENV TENGINE_VERSION 2.3.3
 
 RUN addgroup -g 101 -S nginx && adduser -S -D -H -u 101 -h /var/cache/nginx -s /sbin/nologin -G nginx -g nginx nginx \
     && apk add --no-cache gcc libc-dev make openssl-dev pcre-dev zlib-dev linux-headers tzdata \
