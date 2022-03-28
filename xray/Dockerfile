@@ -1,6 +1,6 @@
 FROM alpine
 
-ENV XRAY_VERSION 1.4.3
+ENV XRAY_VERSION 1.5.4
 
 RUN apk add tzdata wget && ln -sf /usr/share/zoneinfo/Asia/Shanghai /etc/localtime \
     && cd /root && wget -q https://github.com/XTLS/Xray-core/releases/download/v${XRAY_VERSION}/Xray-linux-64.zip \
